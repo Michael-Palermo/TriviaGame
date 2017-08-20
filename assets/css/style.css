@@ -1,0 +1,100 @@
+body *{
+	display: block;
+}
+
+body {
+	background-image: url(http://img.bleacherreport.net/img/images/photos/002/343/229/big_GilletteStadium01_original_original_crop_exact.jpg?w=755&h=503&q=75);
+	height: 100%;
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#mainContent{
+	margin:auto;
+	height: 100%;
+	width:80%; 
+	background-color: white;
+	
+}
+
+
+h1{
+	text-align: center;
+	color: red;
+	font-size: 30px;
+	margin-top: 0px;
+}
+
+#titlePic{
+	margin: auto;
+	padding: 10px;
+	width: 480px;
+	height: 400px;
+}
+
+.draw-border {
+  box-shadow: inset 0 0 0 4px grey;
+  color: grey;
+  -webkit-transition: color 0.25s 0.08333s;
+  transition: color 0.25s 0.08333s;
+  position: relative;
+  margin: auto;
+  
+}
+.draw-border::before, .draw-border::after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+.draw-border::before {
+  border-bottom-width: 4px;
+  border-left-width: 4px;
+}
+.draw-border::after {
+  border-top-width: 4px;
+  border-right-width: 4px;
+}
+.draw-border:hover {
+  color: red;
+}
+.draw-border:hover::before, .draw-border:hover::after {
+  border-color: red;
+  -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+.draw-border:hover::before {
+  -webkit-transition-delay: 0s, 0s, 0.25s;
+          transition-delay: 0s, 0s, 0.25s;
+}
+.draw-border:hover::after {
+  -webkit-transition-delay: 0s, 0.25s, 0s;
+          transition-delay: 0s, 0.25s, 0s;
+}
+
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 700 1.2rem 'Roboto Slab', sans-serif;
+  padding: 1em 2em;
+  letter-spacing: 0.05rem;
+}
+.btn:focus {
+  outline: 2px dotted #55d7dc;
+}
+
+.startGIF{
+	margin:auto;
+	padding-top: 10px;
+}
+
